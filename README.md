@@ -17,7 +17,7 @@ Results are written to `results/benchmark.db` and `results/summary.json`.
 
 This workload is executed on the validation host after the repository is copied there. `setup.sh` and `run_benchmark.sh` do not open an outbound SSH session.
 
-Prerequisites: Ubuntu 24.04; AMD; Python 3.12.3; root or sudo for `setup.sh`. Framework: Bash, SQLite, Python, PyYAML, C/C++, CMake, GCC, OpenMP, NUMA, numactl. This is a host benchmark, not a laptop `pip install` project.
+Prerequisites: Ubuntu 24.04; AMD; Python 3.14.N (uv-managed; all benchmark venvs). System Python 3.12.3 retained for OS and setup scripts only; root or sudo for `setup.sh`. Framework: Bash, SQLite, Python, PyYAML, C/C++, CMake, GCC, OpenMP, NUMA, numactl. This is a host benchmark, not a laptop `pip install` project.
 
 ```mermaid
 flowchart LR
@@ -109,7 +109,7 @@ Builds bin/numa_sweep and walks yaml source versus target NUMA nodes for each wo
 - OS: Ubuntu 24.04
 - GPU vendor: AMD
 - Framework family: Bash, SQLite, Python, PyYAML, C/C++, CMake, GCC, OpenMP, NUMA, numactl
-- Python: Python 3.12.3
+- Python: Python 3.14.N (uv-managed; all benchmark venvs). System Python 3.12.3 retained for OS and setup scripts only
 
 ### Reference validation environment
 
@@ -129,7 +129,7 @@ Ubuntu 24.04 / AMD / Bash, SQLite, Python, PyYAML, C/C++, CMake, GCC, OpenMP, NU
 |---|---|
 | OS | Ubuntu 24.04 |
 | Kernel | kernel 6.8.0 |
-| Python | Python 3.12.3 |
+| Python | Python 3.14.N (uv-managed; all benchmark venvs). System Python 3.12.3 retained for OS and setup scripts only |
 | ROCm | N/A - ROCm not used |
 | rocBLAS | N/A - rocBLAS not used |
 
