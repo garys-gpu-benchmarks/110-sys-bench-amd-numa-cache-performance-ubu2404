@@ -25,6 +25,11 @@
     "value": "sys-bench-amd-numa-cache-performance-ubu2404"
   },
   {
+    "field_name": "Repo Directory Name",
+    "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
+    "value": "110-sys-bench-amd-numa-cache-performance-ubu2404"
+  },
+  {
     "field_name": "Main Goal",
     "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
     "value": "Measure NUMA latency and penalties"
