@@ -21,7 +21,7 @@ Build src/numa_sweep.cpp and run a random pointer chase on yaml local and remote
 Measure NUMA latency and penalties
 
 ## Validation Objective
-Validates local and remote NUMA latency rows from numa_sweep. Do not pass a single --working-set-size or the sweep collapses
+Validates local and remote numa_sweep latency. On one node, remote may equal local
 
 ## Workload Category
 Memory, Bandwidth & Data Movement

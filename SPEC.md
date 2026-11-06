@@ -19,7 +19,7 @@
 ## Invocation
 
 ```bash
-Build and run bin/numa_sweep via scripts/collect_numa_cache.py, optionally wrapped with perf stat, binding execution to a NUMA node via numactl
+Build and run numa_sweep via collect_numa_cache.py, with numactl and optional perf stat
 ```
 
 ## Raw Output Format
@@ -47,7 +47,7 @@ Build src/numa_sweep.cpp and run a random pointer chase on yaml local and remote
 ## Platform Portability
 
 - **AMD (primary):** ```bash
-Build and run bin/numa_sweep via scripts/collect_numa_cache.py, optionally wrapped with perf stat, binding execution to a NUMA node via numactl
+Build and run numa_sweep via collect_numa_cache.py, with numactl and optional perf stat
 ```
 - **NVIDIA:** Primary target is AMD ROCm. NVIDIA notes in this section are reference only and are not the execution path.
 
