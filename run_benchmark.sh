@@ -19,10 +19,10 @@ usage() {
 
 Usage: bash run_benchmark.sh [OPTIONS]
 
-Workload Name:          NUMA Cache Latency Sweep.
-Main Goal:              Measure NUMA latency and penalties.
+Workload Name:          NUMA Cache Latency Sweep
+Main Goal:              Measure NUMA latency and penalties
 Command Tools Executed: Build and run numa_sweep via collect_numa_cache.py, with numactl and
-                        optional perf stat.
+                        optional perf stat
 
 Profiles (default: --smoke):
   --smoke                       Run smoke profile

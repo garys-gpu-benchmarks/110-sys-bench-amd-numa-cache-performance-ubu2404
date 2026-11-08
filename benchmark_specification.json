@@ -205,14 +205,14 @@
     "value": "MI300X"
   },
   {
-    "field_name": "Raw Output Format",
-    "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
-    "value": "overlay.csv from collect_numa_cache.py, then a harness raw CSV of the summary columns. Per-size rows stay in per_size.csv"
-  },
-  {
     "field_name": "Primary Record Granularity",
     "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
     "value": "one harness row per summary. A lone summary is duplicated to two samples"
+  },
+  {
+    "field_name": "Raw Output Format",
+    "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
+    "value": "overlay.csv from collect_numa_cache.py, then a harness raw CSV of the summary columns. Per-size rows stay in per_size.csv"
   },
   {
     "field_name": "Raw Output Example",
@@ -225,14 +225,14 @@
     "value": "cache_latency_nsec, local_numa_node_latency_nsec, remote_numa_node_latency_nsec, cross_socket_numa_penalty_ratio, local_dram_pointer_chase_bandwidth_gb_s, cache_miss_counters_misses_sec"
   },
   {
-    "field_name": "Success Criteria",
-    "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
-    "value": "The helper exits 0 and the harness raw file contains the summary and summary_repeat rows"
-  },
-  {
     "field_name": "Parser and Normalization Notes",
     "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
     "value": "Per-size rows stay in overlay per_size.csv. The harness raw file keeps summary and summary_repeat and copies local latency, remote latency, the cross-socket ratio, local DRAM bandwidth, and the cache-miss counter. A missing perf counter is na (perf cache-misses counter unavailable)"
+  },
+  {
+    "field_name": "Success Criteria",
+    "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
+    "value": "The helper exits 0 and the harness raw file contains the summary and summary_repeat rows"
   },
   {
     "field_name": "Hardware Config",
