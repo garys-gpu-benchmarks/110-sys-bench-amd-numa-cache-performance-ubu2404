@@ -40,6 +40,11 @@
     "value": "Build and run numa_sweep via collect_numa_cache.py, with numactl and optional perf stat"
   },
   {
+    "field_name": "Execution Description With Parameters",
+    "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
+    "value": "Builds bin/numa_sweep and walks yaml source versus target NUMA nodes for each working_set_size. source_numa_node, target_numa_node, num_threads, page_size, stride, access_pattern, cache_level, and num_iterations come from yaml. Optional perf stat -e cache-misses may be attached. The harness raw file keeps local/remote latency columns; overlay also has ratio, bandwidth, and miss-rate fields"
+  },
+  {
     "field_name": "Metrics",
     "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
     "value": "#1: Largest cache-tier pointer-chase latency, ns (cache_latency_nsec); #2: Local DRAM pointer-chase latency, ns (local_numa_node_latency_nsec); #3: Pointer-chase payload rate, GB/s (local_dram_pointer_chase_bandwidth_gb_s); #4: DRAM-tier cache misses/s (cache_miss_counters_misses_sec)"
@@ -173,11 +178,6 @@
     "field_name": "Command Methodology",
     "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
     "value": "Build src/numa_sweep.cpp and run a random pointer chase on yaml local and remote NUMA targets for each working_set_size, optionally under perf stat -e cache-misses. Record local versus remote latency. The overlay also keeps ratio, bandwidth, and miss rate; the harness raw file keeps local and remote latency plus the sweep parameters"
-  },
-  {
-    "field_name": "Execution Description With Parameters",
-    "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
-    "value": "Builds bin/numa_sweep and walks yaml source versus target NUMA nodes for each working_set_size. source_numa_node, target_numa_node, num_threads, page_size, stride, access_pattern, cache_level, and num_iterations come from yaml. Optional perf stat -e cache-misses may be attached. The harness raw file keeps local/remote latency columns; overlay also has ratio, bandwidth, and miss-rate fields"
   },
   {
     "field_name": "Execution Domain",
